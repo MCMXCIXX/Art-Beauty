@@ -1,0 +1,26 @@
+@media (max-width: 1400.99px) {
+    .header__title {
+        font-family: 'Kudryashov Regular';
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 79px;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin: 68px 0 61px 0;
+        max-width: 580px;
+        & span {
+            font-size: 70px;
+            line-height: 105px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .header__col {
+        display: flex;
+        flex-direction: column;
+        
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

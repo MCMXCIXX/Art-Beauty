@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url(reset.css);
-@import url("../fonts/ofont.ru_Kudriashov.ttf");
+@import url(fonts.css);
+@import url(https://allfont.ru/allfont.css?fonts=kudriashov-bold);
 html {
   scroll-behavior: smooth;
 }
@@ -16,30 +16,49 @@ a {
   padding: 0 15px;
 }
 
+body {
+  font-family: "montserrat", sans-serif;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-family: "Montserrat Semibold";
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover span {
+  text-decoration: underline;
+}
+.btn:hover {
+  opacity: 0.75;
+}
+.btn span {
+  margin-left: -55px;
+}
+
 .header {
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background: #F0E3DA no-repeat url(../img/header/header_bg.jpg);
+  background-position: center;
   background-size: cover;
   color: #fff;
-  font-family: 'Montserrat';
+  font-family: "Montserrat Regular";
+  padding: 0 0 120px 0;
 }
-
 .header__col {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .header__top-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .header__activity {
   max-width: 173px;
   padding: 33px 0 0 0;
@@ -48,7 +67,6 @@ a {
   font-size: 14px;
   line-height: 158.9%;
 }
-
 .header__addresses {
   max-width: 243px;
   padding: 33px 0 0 0;
@@ -56,34 +74,27 @@ a {
   font-size: 14px;
   line-height: 22px;
 }
-
 .header__social-icons {
   padding: 33px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header__social-icons a {
   padding-right: 34px;
 }
-
 .header__tel {
   padding: 33px 0 0 0;
   text-align: end;
-  font-family: 'Kudryashev Bold';
+  font-family: "Kudryashov Bold", arial;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
+  display: flex;
+  flex-direction: column;
 }
-
 .header__call {
-  display: block;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 12.6px;
   line-height: 15px;
   color: #fff;
   background: none;
@@ -94,31 +105,58 @@ a {
   margin-top: 13px;
   text-transform: uppercase;
 }
-
 .header__col-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
-
 .header__title {
+  font-family: "Kudryashov Regular";
   font-weight: 400;
-  font-size: 80px;
-  line-height: 105px;
+  font-size: 60px;
+  line-height: 79px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin: 68px 0 61px 0;
   max-width: 580px;
 }
-
+.header__title span {
+  font-size: 80px;
+  line-height: 105px;
+}
 .header__subtitle {
   font-weight: 400;
   font-size: 23px;
-  line-height: 38px;
-  margin-bottom: 38px;
+  line-height: 164.9%;
   max-width: 378px;
+  margin-bottom: 57px;
 }
-/*# sourceMappingURL=main.css.map */
+.header__subtitle strong {
+  font-family: "Montserrat Semibold";
+  font-weight: 600;
+}
+
+@media (max-width: 1400.99px) {
+  .header__title {
+    font-family: "Kudryashov Regular";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 79px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin: 68px 0 61px 0;
+    max-width: 580px;
+  }
+  .header__title span {
+    font-size: 70px;
+    line-height: 105px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__col {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -12,7 +12,39 @@ a {
     margin: 0 auto;
     padding: 0 15px;
 }
+body {
+    font-family: 'montserrat', sans-serif;
+}
+.btn {
+    background: none;
+    border: none;
+    font-family: 'Montserrat Semibold';
+    color: #fff;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover span {
+        text-decoration: underline;
+    }
+    &:hover {
+        opacity: .75;
+
+    }
+
+    & span {
+        margin-left: -55px;
+        
+    }
+}
 @import '../moduls/header';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
+@import '../moduls/media';
 @import url(reset.css);
-@import url("../fonts/ofont.ru_Kudriashov.ttf")
+@import url(fonts.css);
+@import url(https://allfont.ru/allfont.css?fonts=kudriashov-bold);
