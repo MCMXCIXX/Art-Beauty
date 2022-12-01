@@ -18,6 +18,7 @@ a {
 
 body {
   font-family: 'montserrat', sans-serif;
+  overflow: hidden;
 }
 
 .btn {
@@ -79,6 +80,53 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+.header__burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: none;
+  cursor: pointer;
+  right: 0;
+  top: 27px;
+  z-index: 7;
+}
+
+.header__burger span {
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header__burger span:last-child {
+  width: 15px;
+  margin-top: 15px;
+}
+
+.header__burger_active span {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header__burger_active span:last-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -3px;
+  width: 30px;
 }
 
 .header__menu {
@@ -192,6 +240,10 @@ body {
   font-weight: 600;
 }
 
+.header__menu_active {
+  right: -15px !important;
+}
+
 @media (max-width: 1400.99px) {
   .header__title {
     font-size: 50px;
@@ -210,17 +262,18 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     position: absolute;
-    right: 0;
+    right: -1000px;
     top: 0;
     width: 250px;
     background: #000;
     height: 100vh;
-    padding: 0 15px;
+    padding: 40px 15px;
     background: rgba(182, 140, 110, 0.8);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    display: none;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
   }
   .header__col {
     display: -webkit-box;
@@ -306,7 +359,6 @@ body {
   }
   .btn svg {
     width: 80px;
-    height: 110px;
   }
   .btn span {
     font-size: 14px;

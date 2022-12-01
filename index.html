@@ -17,7 +17,11 @@
                             <img src="img/logo.png" alt="Logo Art Beauty">
                         </a>
                     </div>
-                    <div class="header__menu">
+                    <button class="header__burger" id="header__burger">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="header__menu" id="header__menu">
                         <div class="header__col">
                             <div class="header__activity">
                                 <a href="#">Нитевой лифтинг лица в Санкт-Петербурге</a>
@@ -72,5 +76,11 @@
             </div>
         </div>
     </header>
+    <script>
+        document.getElementById('header__burger').onclick = function() {
+        document.getElementById('header__menu').classList.toggle('header__menu_active');
+        document.getElementById('header__burger').classList.toggle('header__burger_active');
+        }
+    </script>
 </body>
 </html>

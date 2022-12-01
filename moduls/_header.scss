@@ -12,6 +12,41 @@
     &__top-line {
         display: flex;
         justify-content: space-between;
+        position: relative;
+    }
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: none;
+        align-items: flex-end;
+        border: none;
+        cursor: pointer;
+        right: 0;
+        top: 27px;
+        z-index: 7;
+        
+        & span {
+            display: inline-block;
+            height: 3px;
+            width: 30px;
+            background: #fff;
+            transition: all 0.5s ease;
+        }
+        & span:last-child {
+            width: 15px;
+            margin-top: 15px;
+        }
+        &_active {
+            & span {
+                transform: rotate(-45deg);
+            }
+            & span:last-child {
+                transform: rotate(45deg);
+                margin-top: -3px;
+                width: 30px;
+            }
+        }
     }
     &__menu {
         display: flex;
@@ -93,5 +128,8 @@
             font-family: 'Montserrat Semibold';
             font-weight: 600;
         }
+    }
+    &__menu_active {
+        right: -15px !important;
     }
 }
