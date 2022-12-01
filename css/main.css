@@ -59,6 +59,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 .header__activity {
   max-width: 173px;
   padding: 33px 0 0 0;
@@ -152,11 +157,20 @@ body {
   }
 }
 @media (max-width: 1200px) {
-  .header__col {
-    display: flex;
-    flex-direction: column;
+  .header__menu {
+    flex-direction: column-reverse;
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .header__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header__col-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
   }
 }/*# sourceMappingURL=main.css.map */
