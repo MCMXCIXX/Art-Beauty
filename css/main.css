@@ -50,6 +50,11 @@ body {
   margin-left: -55px;
 }
 
+.btn svg {
+  width: 171px;
+  height: 161px;
+}
+
 .header {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -301,6 +306,7 @@ body {
   }
   .btn svg {
     width: 80px;
+    height: 110px;
   }
   .btn span {
     font-size: 14px;
