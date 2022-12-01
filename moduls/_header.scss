@@ -1,7 +1,7 @@
 .header {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: #F0E3DA no-repeat url(../img/header/header_bg.jpg);
-    background-position: center;
+    background-position: 50%;
     background-size: cover;
     color: #fff;
     font-family: 'Montserrat Regular';
@@ -73,14 +73,14 @@
         font-family: 'Kudryashov Regular';
         font-weight: 400;
         font-size: 60px;
-        line-height: 79px;
+        line-height: 131%;
         letter-spacing: -0.03em;
         text-transform: uppercase;
         margin: 68px 0 61px 0;
         max-width: 580px;
         & span {
             font-size: 80px;
-            line-height: 105px;
+            line-height: 131%;
         }
     }
     &__subtitle {
