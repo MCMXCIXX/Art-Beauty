@@ -8,6 +8,11 @@
         }
     }
 }
+@media (min-width: 1200px) {
+    .header__burger {
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
     .header__menu {
         flex-direction: column-reverse;
@@ -44,10 +49,19 @@
 
         }
     }
+    .header__burger {
+        display: flex;
+    }
 }
 @media(max-width: 990.99px) {
     .header {
         background-position: 40%;
+    }
+    .dots_header {
+        display: none;
+    }
+    .facelift_header {
+        display: none;
     }
 }
 @media (max-width: 700.99px) {

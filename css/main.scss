@@ -14,7 +14,7 @@ a {
 }
 body {
     font-family: 'montserrat', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .btn {
     background: none;
@@ -50,7 +50,7 @@ body {
     height: 546px;
     background-image: url(../img/header/dots.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
     position: absolute;
 }
 .facelift {

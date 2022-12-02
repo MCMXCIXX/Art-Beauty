@@ -7,7 +7,10 @@
     font-family: 'Montserrat Regular';
     padding: 0 0 120px 0;
     overflow: hidden;
-    position: relative;
+    &__inner {
+        position: relative;
+        right: 0;
+    }
     &__col {
         display: flex;
     }
@@ -70,6 +73,20 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
+        
+        &-wrap {
+            position: relative;
+            &::after {
+                position: absolute;
+                right: 32px;
+                bottom: 8px;
+                content: '';
+                width: 11px;
+                height: 6px;
+                background-image: url(../img/header/arrow-down.svg);
+            }
+        }
+        
     }
     &__social-icons {
         padding: 33px 0 0 0;
@@ -88,6 +105,18 @@
         line-height: 26px;
         display: flex;
         flex-direction: column;
+        & a {
+            position: relative;
+            &::after {
+                position: absolute;
+                right: -15px;
+                bottom: 9px;
+                content: '';
+                width: 11px;
+                height: 6px;
+                background-image: url(../img/header/arrow-down.svg);
+            }
+        }
     }
     &__call {
         font-weight: 700;
@@ -137,9 +166,9 @@
 }
 .dots_header {
     top: -29px;
-    right: 302px;
+    right: 0px;
 }
 .facelift_header {
     top: 378px;
-    right: 355px;
+    right: 0px;
 }
