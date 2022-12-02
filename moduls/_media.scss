@@ -17,13 +17,15 @@
     .header__menu {
         flex-direction: column-reverse;
         position: absolute;
+        z-index: 3;
         right: -1000px;
         top: 0;
+        bottom: 0;
         width: 250px;
         background: #000;
-        height: 100vh;
+        // height: 100vh;
         padding: 40px 15px;
-        background: rgba(182, 140, 110, 0.8);
+        background: rgba(182, 140, 110, 0.95);
         justify-content: flex-end;
         transition: all .5s ease;
     }
