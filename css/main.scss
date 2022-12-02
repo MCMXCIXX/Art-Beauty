@@ -45,6 +45,20 @@ body {
         height: 161px;
     }
 }
+.dots {
+    width: 546px;
+    height: 546px;
+    background-image: url(../img/header/dots.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: absolute;
+}
+.facelift {
+    width: 223px;
+    height: 209px;
+    background-image: url(../img/header/facelift.png);
+    position: absolute;
+}
 @import '../moduls/header';
 
 

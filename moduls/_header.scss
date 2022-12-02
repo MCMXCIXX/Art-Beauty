@@ -6,6 +6,8 @@
     color: #fff;
     font-family: 'Montserrat Regular';
     padding: 0 0 120px 0;
+    overflow: hidden;
+    position: relative;
     &__col {
         display: flex;
     }
@@ -132,4 +134,12 @@
     &__menu_active {
         right: -15px !important;
     }
+}
+.dots_header {
+    top: -29px;
+    right: 302px;
+}
+.facelift_header {
+    top: 378px;
+    right: 355px;
 }
