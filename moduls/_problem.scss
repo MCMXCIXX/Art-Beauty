@@ -1,0 +1,22 @@
+.problem {
+    &__block {
+        position: absolute;
+        &_grey {
+            width:664px;
+            height: 702px;
+            background: #E8E8E8;
+            z-index: 1;
+        }
+        &_brown {
+            width: 711px;
+            height: 384px;
+            background: #F0E3DA;
+            z-index: 0;
+            left: 0;
+        }
+    }
+    &__col_one {
+        position: relative;
+    }
+
+}
