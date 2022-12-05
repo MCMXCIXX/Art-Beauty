@@ -58,6 +58,12 @@ body {
     background-image: url(../img/header/facelift.png);
     position: absolute;
 }
+.btn-black {
+    color: #000;
+    & img {
+        fill: #000;
+    }
+}
 @import '../moduls/header';
 @import '../moduls/problem';
 
