@@ -1,4 +1,8 @@
 .problem {
+    background-image: url(../img/problem/background.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
     &__block {
         position: absolute;
         &_grey {
@@ -7,6 +11,7 @@
             background: #E8E8E8;
             z-index: 1;
             top: 93px;
+            min-width: 644px;
         }
         &_brown {
             width: 100%;
@@ -15,6 +20,7 @@
             z-index: 0;
             top: 482px;
             left: -82px;
+            min-width: 711px
         }
     }
     &__img {
@@ -104,5 +110,10 @@
         position: relative;
         width: 50%;
     }
+    .dots_problem {
+        top: 0;
+        left: 40%;
+    }
+    
 
 }
