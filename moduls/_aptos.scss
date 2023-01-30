@@ -1,0 +1,69 @@
+.aptos {
+    background: #F0E3DA;
+    padding: 215px 0 0 0;
+}
+.aptos__inner {
+}
+.aptos__level-one {
+    display: flex;
+    justify-content: space-between;
+}
+.aptos-img {
+}
+.aptos__square {
+    background: #EACFBC;
+    width: 832px;
+    height: 632px;
+    position: relative;
+    z-index: 1;
+    left: -55px;
+}
+.aptos__img {
+    width: 580px;
+    height: 747px;
+    background: url(../img/aptos/aptos-main.jpg) no-repeat;
+    position: absolute;
+    left: 137px;
+    bottom: 100px;
+}
+.aptos__signature {
+    width: 167px;
+    height: 85px;
+    background: url(../img/aptos/Aptos.png) no-repeat;
+    position: absolute;
+    right: 30px;
+    bottom: -61px;
+}
+.aptos-text {
+    padding: 0 0 0 36px;
+    color: #312C38;
+    
+}
+.aptos__title span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    font-size: 88.5677px;
+    margin-left: -146px;
+    color: #312C38;
+}
+.aptos__title  {
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 76.7587px;
+    line-height: 105%;
+    letter-spacing: 4.95979px;
+    text-transform: uppercase;
+    color: #B68C6E;
+
+}
+.aptos__subtitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 50px 0 30px 0;
+}
+.aptos__discr {
+    font-size: 16px;
+    line-height: 180%;
+    margin-top: 15px;
+}
