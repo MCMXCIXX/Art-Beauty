@@ -580,6 +580,7 @@ body {
 .aptos__info-img {
   position: relative;
   width: 100%;
+  min-height: 718px;
 }
 
 .main-img {
@@ -660,6 +661,10 @@ body {
     width: 380px;
     height: 547px;
     background-size: cover;
+  }
+  .second-img {
+    top: 346px;
+    right: 0;
   }
 }
 
@@ -754,6 +759,33 @@ body {
   .aptos__square {
     left: 15px;
   }
+  .aptos__info-descr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 75px 0 0 0;
+  }
+  .aptos__info-descr p {
+    max-width: 750px;
+    margin-top: 20px;
+  }
+  .aptos__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .second-img {
+    top: 315px;
+    right: 578px;
+  }
 }
 
 @media (max-width: 990.99px) {
@@ -795,6 +827,15 @@ body {
   }
   .problem__title_black {
     margin: 0;
+  }
+  .second-img {
+    top: 346px;
+    right: 0;
+  }
+  .main-img {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
   }
 }
 
@@ -858,6 +899,25 @@ body {
     font-size: 15px;
     line-height: 160.9%;
     margin: 44px 0;
+  }
+  .second-img {
+    width: 282px;
+    height: 338px;
+    background-size: cover;
+  }
+  .main-img {
+    width: 419px;
+    height: 494px;
+    background-size: cover;
+  }
+  .aptos__italic {
+    max-width: 319px;
+    font-size: 24px;
+    line-height: 154%;
+    margin-top: 35px;
+  }
+  .aptos__info-descr p {
+    font-size: 14px;
   }
 }
 
@@ -947,6 +1007,46 @@ body {
     background-size: cover;
     right: 12px;
     bottom: -24px;
+  }
+  .second-img {
+    width: 182px;
+    height: 238px;
+    right: 50%;
+    -webkit-transform: translate(88%, 0);
+            transform: translate(88%, 0);
+    top: 210px;
+  }
+  .main-img {
+    width: 319px;
+    height: 394px;
+  }
+  .aptos__italic {
+    max-width: 219px;
+    font-size: 18px;
+  }
+  .aptos__info-descr p {
+    font-size: 14px;
+    max-width: 219px;
+  }
+  .aptos__info-img {
+    min-height: 500px;
+  }
+  .aptos__info {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .aptos__info-descr {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    padding: 20px 0 0 0;
+  }
+  .aptos__italic::after {
+    width: 123px;
+    height: 79px;
+    top: -36px;
+    left: -71px;
   }
 }
 

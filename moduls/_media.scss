@@ -41,6 +41,11 @@
         height: 547px;
         background-size: cover;
     }
+    .second-img {
+        top: 346px;
+        right: 0;
+    }
+
 
 }
 @media (min-width: 1200px) {
@@ -108,6 +113,23 @@
     .aptos__square {
         left: 15px;
     }
+    .aptos__info-descr {
+        flex-direction: column;
+        align-items: center;
+        padding: 75px 0 0 0;
+    }
+    .aptos__info-descr p {
+        max-width: 750px;
+        margin-top: 20px;
+    }
+    .aptos__info {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .second-img {
+        top: 315px;
+        right: 578px;
+    }
 }
 @media(max-width: 990.99px) {
     .header {
@@ -144,6 +166,14 @@
     }
     .problem__title_black {
         margin: 0;
+    }
+    .second-img {
+        top: 346px;
+        right: 0;
+    }
+    .main-img {
+        right: 50%;
+        transform: translate(50%, 0);
     }
 }
 @media (max-width: 700.99px) {
@@ -207,6 +237,26 @@
         font-size: 15px;
         line-height: 160.9%;
         margin: 44px 0;
+    }
+    .second-img {
+        width: 282px;
+        height: 338px;
+        background-size: cover;
+
+    }
+    .main-img {
+       width: 419px;
+       height: 494px;
+       background-size: cover;
+    }
+    .aptos__italic {
+        max-width: 319px;
+        font-size: 24px;
+        line-height: 154%;
+        margin-top: 35px;
+    }
+    .aptos__info-descr p {
+        font-size: 14px;
     }
 }
 @media (max-width: 500.99px) {
@@ -294,6 +344,41 @@
         background-size: cover;
         right: 12px;
         bottom: -24px;
+    }
+    .second-img {
+        width: 182px;
+        height: 238px;
+        right: 50%;
+        transform: translate(88%, 0);
+        top: 210px;
+    }
+    .main-img {
+       width: 319px;
+       height: 394px;
+    }
+    .aptos__italic {
+        max-width: 219px;
+        font-size: 18px;
+    }
+    .aptos__info-descr p {
+        font-size: 14px;
+        max-width: 219px;
+    }
+    .aptos__info-img {
+        min-height: 500px;
+    }
+    .aptos__info {
+        align-items: end;
+    }
+    .aptos__info-descr {
+        align-items: end;
+        padding: 20px 0 0 0;
+    }
+    .aptos__italic::after {
+        width: 123px;
+        height: 79px;
+        top: -36px;
+        left: -71px;
     }
 }
 @media (max-width: 320.99px) {
