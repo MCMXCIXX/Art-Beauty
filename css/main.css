@@ -458,6 +458,7 @@ body {
 .aptos {
   background: #F0E3DA;
   padding: 215px 0 0 0;
+  overflow: hidden;
 }
 
 .aptos__level-one {
@@ -532,6 +533,11 @@ body {
   margin-top: 15px;
 }
 
+.dots_aptos {
+  top: -164px;
+  right: -265px;
+}
+
 @media (max-width: 1500.99px) {
   .problem__inner {
     -webkit-box-orient: vertical;
@@ -564,6 +570,15 @@ body {
   }
   .header__title span {
     font-size: 70px;
+  }
+  .aptos__square {
+    width: 632px;
+    height: 432px;
+  }
+  .aptos__img {
+    width: 380px;
+    height: 547px;
+    background-size: cover;
   }
 }
 
@@ -634,6 +649,30 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .aptos__level-one {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .dots_aptos {
+    display: none;
+  }
+  .aptos__title span {
+    margin-left: -75px;
+  }
+  .aptos__title {
+    margin: 50px 0 0 75px;
+  }
+  .aptos-text h2, .aptos-text p {
+    margin-left: 75px;
+  }
+  .aptos__square {
+    left: 15px;
+  }
 }
 
 @media (max-width: 990.99px) {
@@ -680,6 +719,9 @@ body {
 
 @media (max-width: 700.99px) {
   .header {
+    padding: 0;
+  }
+  .header__inner {
     padding: 0;
   }
   .header__title {
@@ -786,7 +828,44 @@ body {
             justify-content: center;
   }
   .problem__item {
-    margin: 24px 0;
+    margin: 20px 0 0 0;
+  }
+  .aptos {
+    padding: 110px 0 0 0;
+  }
+  .aptos__square {
+    width: 339px;
+    height: 263px;
+  }
+  .aptos__img {
+    width: 245px;
+    height: 316px;
+    left: 62px;
+    bottom: 39px;
+  }
+  .aptos__title span {
+    font-size: 37px;
+  }
+  .aptos__title {
+    font-size: 32px;
+    margin: 0;
+  }
+  .aptos__subtitle, .aptos__discr {
+    font-size: 14px;
+  }
+  .aptos__subtitle {
+    margin: 5px 0 23px 0;
+  }
+  .aptos-text {
+    padding: 0;
+    margin: -15px 0 0 0;
+  }
+  .aptos__signature {
+    width: 70px;
+    height: 36px;
+    background-size: cover;
+    right: 12px;
+    bottom: -24px;
   }
 }
 

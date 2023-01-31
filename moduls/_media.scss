@@ -31,6 +31,17 @@
             font-size: 70px;
         }
     }
+
+    .aptos__square {
+        width: 632px;
+        height: 432px;
+    }
+    .aptos__img {
+        width: 380px;
+        height: 547px;
+        background-size: cover;
+    }
+
 }
 @media (min-width: 1200px) {
     .header__burger {
@@ -78,6 +89,25 @@
     .header__burger {
         display: flex;
     }
+    .aptos__level-one {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dots_aptos {
+        display: none;
+    }
+    .aptos__title span {
+        margin-left: -75px;
+    }
+    .aptos__title {
+        margin: 50px 0 0 75px;
+    }
+    .aptos-text h2, .aptos-text p {
+        margin-left: 75px;
+    }
+    .aptos__square {
+        left: 15px;
+    }
 }
 @media(max-width: 990.99px) {
     .header {
@@ -118,6 +148,9 @@
 }
 @media (max-width: 700.99px) {
     .header {
+        padding: 0;
+    }
+    .header__inner {
         padding: 0;
     }
     .header__title {
@@ -223,7 +256,44 @@
         justify-content: center;
     }
     .problem__item {
-        margin: 24px 0;
+        margin: 20px 0 0 0;
+    }
+    .aptos {
+        padding: 110px 0 0 0;
+    }
+    .aptos__square {
+        width: 339px;
+        height: 263px;
+    }
+    .aptos__img {
+        width: 245px;
+        height: 316px;
+        left: 62px;
+        bottom: 39px;
+    }
+    .aptos__title span {
+        font-size: 37px;
+    }
+    .aptos__title {
+        font-size: 32px;
+        margin: 0;;
+    }
+    .aptos__subtitle, .aptos__discr {
+        font-size: 14px;
+    }
+    .aptos__subtitle {
+        margin: 5px 0 23px 0;
+    }
+    .aptos-text {
+        padding: 0;
+        margin: -15px 0 0 0;
+    }
+    .aptos__signature {
+        width: 70px;
+        height: 36px;
+        background-size: cover;
+        right: 12px;
+        bottom: -24px;
     }
 }
 @media (max-width: 320.99px) {

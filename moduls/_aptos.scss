@@ -1,6 +1,7 @@
 .aptos {
     background: #F0E3DA;
     padding: 215px 0 0 0;
+    overflow: hidden;
 }
 .aptos__inner {
 }
@@ -66,4 +67,8 @@
     font-size: 16px;
     line-height: 180%;
     margin-top: 15px;
+}
+.dots_aptos {
+    top: -164px;
+    right: -265px;
 }
