@@ -456,7 +456,7 @@ body {
 }
 
 .aptos {
-  background: #F0E3DA;
+  background: #F0E3DA url(../img/aptos/apros-bg-line.svg) no-repeat;
   padding: 215px 0 0 0;
   overflow: hidden;
 }
@@ -536,6 +536,87 @@ body {
 .dots_aptos {
   top: -164px;
   right: -265px;
+}
+
+.aptos__level-two {
+  padding: 0 0 180px 0;
+}
+
+.aptos__info {
+  padding: 91px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aptos__italic {
+  position: relative;
+  max-width: 510px;
+  font-family: 'Lora Italic';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 154%;
+  color: #B68C6E;
+  margin-top: 133px;
+  z-index: 3;
+}
+
+.aptos__italic::after {
+  position: absolute;
+  content: '';
+  width: 153px;
+  height: 98px;
+  background: url(../img/aptos/quotes-italic.svg) no-repeat 0 0;
+  background-size: cover;
+  top: -22px;
+  left: -87px;
+  z-index: -1;
+}
+
+.aptos__info-img {
+  position: relative;
+  width: 100%;
+}
+
+.main-img {
+  right: 0;
+  top: 0;
+  width: 526px;
+  height: 648px;
+  background: url(../img/aptos/info-main.jpg) no-repeat 0 0;
+  position: absolute;
+}
+
+.second-img {
+  top: 315px;
+  right: 578px;
+  position: absolute;
+  width: 302px;
+  height: 394px;
+  background: url(../img/aptos/info-second.jpg) no-repeat 0 0;
+}
+
+.aptos__info-descr {
+  padding: 139px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aptos__info-descr p {
+  max-width: 575px;
+  font-family: 'Montserrat Regular';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  color: #1D1D1A;
 }
 
 @media (max-width: 1500.99px) {
